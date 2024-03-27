@@ -1,9 +1,11 @@
-const { test, expect } = require("../fixture/fixtures");
+const { test, expect } = require("@playwright/test");
+const { Booking } = require('../service/bookings');
 const { getBookingData, getUpdateBookingData } = require("../models/booking");
 
 test.describe.serial("Test Create and update booking", async () => {
-  test("Create Booking Test", async (booking) => {
+  test("Create Booking Test", async () => {
     var bookingid = 0;
+    const booking = new Booking()
     await test.step("Create booking", async () => {
       const data = await getBookingData();
       const response = await booking.createBooking(data);
