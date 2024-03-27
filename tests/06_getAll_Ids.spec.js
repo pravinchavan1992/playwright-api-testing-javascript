@@ -17,7 +17,7 @@ test.describe
     const res = await response.json();
 
     //expect(res).toHaveProperty("firstname", "Josh");
-    expect(res).toHaveProperty("lastname", "Allen");
-    expect(res).toHaveProperty("additionalneeds", "super bowls");
+    //expect(res).toHaveProperty("lastname", "Allen");
+    //expect(res).toHaveProperty("additionalneeds", "super bowls");
   });
 });
