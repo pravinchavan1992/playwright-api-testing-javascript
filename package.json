@@ -1,0 +1,20 @@
+{
+  "name": "playwright-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "formatter": "npx prettier . --write"
+  },
+  "author": "Pravin Chavan",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.30",
+    "prettier": "3.2.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
