@@ -10,8 +10,6 @@ test.describe.serial("Test Create and update booking", async () => {
       const data = await getBookingData();
       const response = await booking.createBooking(data);
       const res = await response.json();
-      console.log("Create Req");
-      console.log(res);
       expect.soft(res.bookingid).not.toBeNull();
       bookingid = res.bookingid;
       expect.soft(res.booking.firstname).toBe(data.firstname);
@@ -25,8 +23,6 @@ test.describe.serial("Test Create and update booking", async () => {
       const data = await getUpdateBookingData();
       const response = await booking.updateBooking(data, bookingid);
       const res = await response.json();
-      console.log("Update Req");
-      console.log(res);
       expect.soft(res.bookingid).not.toBeNull();
       expect.soft(res.firstname).toBe(data.firstname);
       expect.soft(res.lastname).toBe(data.lastname);
